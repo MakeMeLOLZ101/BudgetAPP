@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Applet</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <input 
+                type="number" 
+                id="budget-input" 
+                placeholder="Enter your budget"
+                class="budget-input"
+            >
+        </div>
+
+        <div class="balance-section">
+            <h2>Balance: <span id="balance">$0.00</span></h2>
+        </div>
+
+        <form id="expense-form" class="expense-form">
+            <input 
+                type="text" 
+                id="expense-name" 
+                placeholder="What did you spend on?"
+                required
+                class="expense-input"
+            >
+            <input 
+                type="number" 
+                id="expense-amount" 
+                placeholder="How much?"
+                required
+                class="expense-input"
+            >
+            <button type="submit" class="add-btn">Add Expense</button>
+        </form>
+
+        <ul id="expenses-list" class="expenses-list"></ul>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
